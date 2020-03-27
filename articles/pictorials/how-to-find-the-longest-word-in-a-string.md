@@ -101,4 +101,15 @@ function longestLength(str) {
 }
 ```
 
+**Using Sort**
+
+```javascript
+function longestLength(str) {
+  return str
+    .split(' ')
+    .map(s => s.length)
+    .sort((a,b)=>b-a)[0];
+}
+```
+
 <ArticleFootnote />
